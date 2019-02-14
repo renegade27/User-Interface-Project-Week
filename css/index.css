@@ -156,8 +156,9 @@ table {
   margin: 0 auto;
 }
 .container .header {
-  width: 100%;
+  max-width: 78%;
   height: 680px;
+  margin-bottom: 50px;
 }
 .container .header .nav-home {
   width: 100%;
@@ -182,13 +183,151 @@ table {
 .container .header .header-home p {
   width: 35%;
   position: absolute;
-  bottom: 30px;
-  left: 30px;
+  bottom: 40px;
+  left: 17.5%;
   padding: 1%;
   color: white;
   font-size: 4rem;
   font-family: 'Staatliches', cursive;
 }
 .container .header .header-home img {
+  width: 100%;
+}
+.container .home-block {
+  max-width: 66%;
+}
+.container .home-block .button-articles {
+  display: flex;
+  height: 500px;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.container .home-block .button-articles .row1 {
+  height: 45%;
+  width: 100%;
+  display: flex;
+}
+.container .home-block .button-articles .row1 img {
+  height: 240px;
+  margin-left: 8%;
+}
+.container .home-block .button-articles .row2 {
+  height: 45%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.container .home-block .button-articles .row2 img {
+  height: 240px;
+  margin-right: 8%;
+}
+.container .home-block .button-articles section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.container .home-block .button-articles section h2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 5% 0;
+  width: 100%;
+  font-family: "PT Sans", sans-serif;
+}
+.container .home-block .button-articles section p {
+  margin: 2.5% 0;
+  width: 100%;
+  font-family: "Ubuntu", sans-serif;
+}
+.container .home-block .button-articles section button {
+  font-size: 0.8rem;
+  border: 1px solid black;
+  background-color: white;
+  margin: 2.5% 0;
+  width: 40%;
+  height: 10%;
+}
+.container .home-block .projects-header {
+  margin: 10% 0 5% 0;
+  font-weight: bold;
+  font-size: 1.6rem;
+  font-family: "Ubuntu", sans-serif;
+}
+.container .home-block .projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container .home-block .projects .content-row {
+  margin-bottom: 15%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.container .home-block .projects .content-row img {
+  height: 180px;
+  width: 100%;
+  margin-bottom: 5%;
+}
+.container .home-block .projects .content-row .img-overlay {
+  position: absolute;
+  margin-top: 140px;
+  height: 70px;
+  padding: 20px 20px 0 20px;
+  text-align: center;
+  background-color: lightgrey;
+  font-size: 2rem;
+  font-family: "PT Sans", sans-serif;
+  letter-spacing: 4px;
+}
+.container .home-block .projects .content-row p {
+  align-self: center;
+  padding: 0 12.5%;
+  margin: 5% 0;
+  width: 100%;
+  font-family: 'Ubuntu', sans-serif;
+}
+.container .home-block .projects .content-row[data-project='2'] {
+  justify-content: flex-start;
+}
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  background-color: slategray;
+  height: 150px;
+  padding: 5% 5% 0 5%;
+}
+footer p,
+footer h2 {
+  color: white;
+}
+footer .column-input {
+  display: flex;
+  width: 35%;
+  flex-wrap: wrap;
+}
+footer .column-input h2 {
+  width: 100%;
+  font-size: 1.4rem;
+}
+footer .column-input input {
+  width: 100%;
+}
+footer .column-input p {
+  font-size: 0.8rem;
+  width: 100%;
+}
+footer .column-info {
+  width: 20%;
+}
+footer .column-info h2 {
+  width: 100%;
+  font-size: 1rem;
+}
+footer .column-info p {
+  font-size: 0.8rem;
   width: 100%;
 }

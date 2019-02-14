@@ -1,6 +1,7 @@
 .container .header {
-    width: 100%;
+    max-width: 78%;
     height: 680px;
+    margin-bottom: 50px;
     .nav-home {
         .quick-nav();
     }
@@ -12,14 +13,152 @@
         p {
             width: 35%;
             position: absolute;
-            bottom: 30px;
-            left: 30px;
+            bottom: 40px;
+            left: 17.5%;
             padding: 1%;
             color: white;
             font-size: 4.0rem;
             font-family: 'Staatliches', cursive;
         }
         img {
+            width: 100%;
+        }
+    }
+}
+
+.container .home-block {
+    max-width: 66%;
+    .button-articles {
+        display: flex;
+        height: 500px;
+        flex-wrap: wrap;
+        align-content: space-between;
+        .row1 {
+            height: 45%;
+            width: 100%;
+            display: flex;
+            img {
+                height: 240px;
+                margin-left: 8%;
+            }
+        }
+        .row2 {
+            height: 45%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            img {
+                height: 240px;
+                margin-right: 8%;
+            }
+        }
+        section {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            h2 {
+                font-size: 1.6rem;
+                font-weight: bold;
+                margin: 5% 0;
+                width: 100%;
+                font-family: "PT Sans", sans-serif;
+            }
+            p {
+                margin: 2.5% 0;
+                width: 100%;
+                font-family: "Ubuntu", sans-serif;
+            }
+            button {
+                font-size: 0.8rem;
+                border: 1px solid black;
+                background-color: white;
+                margin: 2.5% 0;
+                width: 40%;
+                height: 10%;
+            }
+        }
+    }
+    .projects-header {
+        margin: 10% 0 5% 0;
+        font-weight: bold;
+        font-size: 1.6rem;
+        font-family: "Ubuntu", sans-serif;
+    }
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        .content-row {
+            margin-bottom: 15%;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            img {
+                height: 180px;
+                width: 100%;;
+                margin-bottom: 5%;
+            }
+            .img-overlay {
+                position: absolute;
+                margin-top: 140px;
+                height: 70px;
+                padding: 20px 20px 0 20px;
+                text-align: center;
+                background-color: lightgrey;
+                font-size: 2.0rem;
+                font-family: "PT Sans", sans-serif;
+                letter-spacing: 4px;
+            }
+            p {
+                align-self: center;
+                padding: 0 12.5%;
+                margin: 5% 0;
+                width: 100%;
+                font-family: 'Ubuntu', sans-serif;
+            }
+        }
+        .content-row[data-project='2'] {
+            justify-content: flex-start;
+        }
+    }
+}
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background-color: slategray;
+    height: 150px;
+    padding: 5% 5% 0 5%;
+    p, h2 {
+        color: white;
+    }
+    .column-input {
+        display: flex;
+        width: 35%;
+        flex-wrap: wrap;
+        h2 {
+            width: 100%;
+            font-size: 1.4rem;
+        }
+        input {
+            width: 100%;
+        }
+        p {
+            font-size: 0.8rem;
+            width: 100%;
+        }
+    }
+    .column-info {
+        width: 20%;
+        h2 {
+            width: 100%;
+            font-size: 1.0rem;
+        }
+        p {
+            font-size: 0.8rem;
             width: 100%;
         }
     }
