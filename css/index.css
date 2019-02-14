@@ -153,10 +153,11 @@ table {
   font-size: 62.5%;
 }
 .container {
+  max-width: 860px;
   margin: 0 auto;
 }
 .container .header {
-  max-width: 78%;
+  max-width: 860px;
   height: 680px;
   margin-bottom: 50px;
 }
@@ -183,9 +184,7 @@ table {
 .container .header .header-home p {
   width: 35%;
   position: absolute;
-  bottom: 40px;
-  left: 17.5%;
-  padding: 1%;
+  padding: 27.5% 0 0 50px;
   color: white;
   font-size: 4rem;
   font-family: 'Staatliches', cursive;
@@ -194,7 +193,7 @@ table {
   width: 100%;
 }
 .container .home-block {
-  max-width: 66%;
+  max-width: 720px;
 }
 .container .home-block .button-articles {
   display: flex;
@@ -301,8 +300,8 @@ footer {
   align-items: space-between;
   width: 100%;
   background-color: slategray;
-  height: 150px;
-  padding: 5% 5% 0 5%;
+  height: 180px;
+  padding: 5% 5% 5% 5%;
 }
 footer p,
 footer h2 {
