@@ -140,7 +140,7 @@ table {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: slategray;
+  background-color: #828282;
   color: white;
   font-size: 1.6rem;
   padding: 0 5%;
@@ -173,7 +173,7 @@ table {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: slategray;
+  background-color: #828282;
   color: white;
   font-size: 1.6rem;
   padding: 0 5%;
@@ -298,7 +298,7 @@ table {
 }
 .container .home-block .button-articles section button {
   font-size: 0.8rem;
-  border: 1px solid black;
+  border: 1px solid #222222;
   background-color: white;
   margin: 2.5% 0;
   width: 40%;
@@ -344,7 +344,7 @@ table {
   height: 70px;
   padding: 20px 20px 0 20px;
   text-align: center;
-  background-color: lightgrey;
+  background-color: #D8D8D8;
   font-size: 2rem;
   font-family: "PT Sans", sans-serif;
   letter-spacing: 4px;
@@ -352,6 +352,11 @@ table {
 @media (max-width: 860px) {
   .container .home-block .projects .content-row .img-overlay {
     width: 50%;
+  }
+}
+@media (max-width: 600px) {
+  .container .home-block .projects .content-row .img-overlay {
+    width: 70%;
   }
 }
 .container .home-block .projects .content-row p {
@@ -375,14 +380,15 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   align-items: space-between;
-  max-width: 440px;
-  background-color: slategray;
+  max-width: 860px;
+  background-color: #828282;
   height: 180px;
   padding: 5% 5% 5% 5%;
   margin: 0 auto;
 }
 @media (max-width: 860px) {
   footer {
+    max-width: 440px;
     justify-content: flex-start;
     height: 100%;
   }
@@ -399,7 +405,7 @@ footer .copyright {
   width: 100%;
   align-self: center;
   margin-top: 10px;
-  background-color: slategray;
+  background-color: #828282;
 }
 footer .column-input {
   display: flex;
@@ -447,4 +453,99 @@ footer .column-info p {
   margin-bottom: 7px;
   font-size: 0.7rem;
   width: 100%;
+}
+.container .header {
+  max-width: 860px;
+  height: 400px;
+  margin-bottom: 50px;
+}
+@media (max-width: 860px) {
+  .container .header {
+    max-width: 480px;
+    margin-bottom: 30px;
+  }
+}
+.container .header .nav-services {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #828282;
+  color: white;
+  font-size: 1.6rem;
+  padding: 0 5%;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 4px;
+}
+.container .header .header-services {
+  width: 100%;
+  height: 320px;
+  display: flex;
+  justify-content: flex-start;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/services/services-jumbotron.png");
+}
+@media (max-width: 860px) {
+  .container .header .header-services {
+    background-position-y: -75px;
+    background-image: url("../img/services/services-mobile-jumbotron.png");
+  }
+}
+.container .header .header-services p {
+  width: 100%;
+  position: absolute;
+  padding: 225px 0 0 100px;
+  color: white;
+  font-size: 4rem;
+  font-family: 'Staatliches', cursive;
+}
+@media (max-width: 860px) {
+  .container .header .header-services p {
+    padding-left: 30px;
+  }
+}
+.container .services-block .services-content-row {
+  max-width: 720px;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  line-height: 24px;
+  font-size: 1.1rem;
+  padding-left: 10px;
+  font-family: "Ubuntu", sans-serif;
+}
+@media (max-width: 860px) {
+  .container .services-block .services-content-row {
+    max-width: 440px;
+  }
+}
+.container .services-block .services-content-tabs {
+  display: flex;
+  max-width: 720px;
+  justify-content: space-between;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+@media (max-width: 860px) {
+  .container .services-block .services-content-tabs {
+    max-width: 440px;
+  }
+}
+.container .services-block .services-content-tabs button {
+  font-size: 2rem;
+  font-weight: bolder;
+  font-size: 0.8rem;
+  border: 1px solid #222222;
+  background-color: white;
+  margin: 2.5% 0;
+  width: 22.5%;
+  height: 40px;
+}
+@media (max-width: 860px) {
+  .container .services-block .services-content-tabs button {
+    width: 100%;
+  }
 }

@@ -107,7 +107,7 @@
             }
             button {
                 font-size: 0.8rem;
-                border: 1px solid black;
+                border: 1px solid #222222;
                 background-color: white;
                 margin: 2.5% 0;
                 width: 40%;
@@ -149,12 +149,15 @@
                 height: 70px;
                 padding: 20px 20px 0 20px;
                 text-align: center;
-                background-color: lightgrey;
+                background-color: #D8D8D8;
                 font-size: 2.0rem;
                 font-family: "PT Sans", sans-serif;
                 letter-spacing: 4px;
                 @media @tablet {
                     width: 50%;
+                }
+                @media (max-width: 600px) {
+                    width: 70%;
                 }
             }
             p {
@@ -179,12 +182,13 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: space-between;
-    max-width: 440px;
-    background-color: slategray;
+    max-width: 860px;
+    background-color: #828282;
     height: 180px;
     padding: 5% 5% 5% 5%;
     margin: 0 auto;
     @media @tablet {
+        max-width: 440px;
         justify-content: flex-start;
         height: 100%;
     }
@@ -199,7 +203,7 @@ footer {
         width: 100%;
         align-self: center;
         margin-top: 10px;
-        background-color: slategray;
+        background-color: #828282;
     }
     .column-input {
         display: flex;
