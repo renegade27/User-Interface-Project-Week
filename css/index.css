@@ -156,18 +156,38 @@ table {
   max-width: 860px;
   margin: 0 auto;
 }
-.container .header {
+.expanded-nav-view {
+  height: 800px;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  background-color: lightseagreen;
+  opacity: 0.4;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.expanded-nav-view a {
+  font-size: 4rem;
+  line-height: 30px;
+  width: 100%;
+  color: white;
+  font-family: "PT Sans", sans-serif;
+}
+.hide {
+  display: none;
+}
+.container .home {
   max-width: 860px;
   height: 680px;
   margin-bottom: 50px;
 }
 @media (max-width: 860px) {
-  .container .header {
+  .container .home {
     max-width: 480px;
     margin-bottom: 30px;
   }
 }
-.container .header .nav-home {
+.container .home .nav-home {
   width: 100%;
   height: 80px;
   display: flex;
@@ -181,7 +201,7 @@ table {
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 4px;
 }
-.container .header .header-home {
+.container .home .header-home {
   width: 100%;
   height: 600px;
   display: flex;
@@ -189,13 +209,13 @@ table {
   background-image: url("../img/home/home-jumbotron.png");
 }
 @media (max-width: 860px) {
-  .container .header .header-home {
+  .container .home .header-home {
     background-image: url("../img/home/home-mobile-jumbotron.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
 }
-.container .header .header-home p {
+.container .home .header-home p {
   width: 33%;
   position: absolute;
   padding: 360px 0 0 50px;
@@ -454,18 +474,21 @@ footer .column-info p {
   font-size: 0.7rem;
   width: 100%;
 }
-.container .header {
+.hide {
+  display: none;
+}
+.container .services {
   max-width: 860px;
   height: 400px;
   margin-bottom: 50px;
 }
 @media (max-width: 860px) {
-  .container .header {
+  .container .services {
     max-width: 480px;
     margin-bottom: 30px;
   }
 }
-.container .header .nav-services {
+.container .services .nav-services {
   width: 100%;
   height: 80px;
   display: flex;
@@ -479,7 +502,7 @@ footer .column-info p {
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 4px;
 }
-.container .header .header-services {
+.container .services .header-services {
   width: 100%;
   height: 320px;
   display: flex;
@@ -489,12 +512,12 @@ footer .column-info p {
   background-image: url("../img/services/services-jumbotron.png");
 }
 @media (max-width: 860px) {
-  .container .header .header-services {
+  .container .services .header-services {
     background-position-y: -75px;
     background-image: url("../img/services/services-mobile-jumbotron.png");
   }
 }
-.container .header .header-services p {
+.container .services .header-services p {
   width: 100%;
   position: absolute;
   padding: 225px 0 0 100px;
@@ -503,7 +526,7 @@ footer .column-info p {
   font-family: 'Staatliches', cursive;
 }
 @media (max-width: 860px) {
-  .container .header .header-services p {
+  .container .services .header-services p {
     padding-left: 30px;
   }
 }
@@ -548,4 +571,51 @@ footer .column-info p {
   .container .services-block .services-content-tabs button {
     width: 100%;
   }
+}
+.container .services-block .services-content-block {
+  display: flex;
+  max-width: 720px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: flex-start;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+@media (max-width: 860px) {
+  .container .services-block .services-content-block {
+    max-width: 440px;
+  }
+}
+.container .services-block .services-content-block h2 {
+  order: -1;
+  width: 100%;
+  height: 20%;
+  margin: 5% 0;
+  font-size: 1.6rem;
+  font-weight: bold;
+  font-family: "PT Sans", sans-serif;
+}
+.container .services-block .services-content-block .tab-content {
+  width: 47.5%;
+  align-self: flex-start;
+  vertical-align: top;
+  line-height: 24px;
+}
+@media (max-width: 860px) {
+  .container .services-block .services-content-block .tab-content {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}
+.container .services-block .services-content-block img {
+  width: 50%;
+}
+@media (max-width: 860px) {
+  .container .services-block .services-content-block img {
+    width: 100%;
+  }
+}
+.hide {
+  display: none;
 }
