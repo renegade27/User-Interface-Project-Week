@@ -176,6 +176,10 @@ table {
 .hide {
   display: none;
 }
+.tab-link-selected {
+  background-color: black;
+  color: white;
+}
 .container .home {
   max-width: 860px;
   height: 680px;
@@ -572,6 +576,10 @@ footer .column-info p {
     width: 100%;
   }
 }
+.container .services-block .services-content-tabs .tab-link-selected {
+  background-color: #5E9FB9;
+  color: white;
+}
 .container .services-block .services-content-block {
   display: flex;
   max-width: 720px;
@@ -615,7 +623,4 @@ footer .column-info p {
   .container .services-block .services-content-block img {
     width: 100%;
   }
-}
-.hide {
-  display: none;
 }
