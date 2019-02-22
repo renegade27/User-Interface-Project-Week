@@ -167,12 +167,13 @@ table {
   margin: 0 auto;
 }
 .expanded-nav-view {
-  height: 800px;
+  height: 1px;
+  align-self: flex-end;
   justify-content: center;
   align-items: center;
   display: none;
   background-color: lightseagreen;
-  opacity: 0.4;
+  opacity: 0;
   flex-wrap: wrap;
   text-align: center;
 }
@@ -183,6 +184,10 @@ table {
   }
 }
 .expanded-nav-view a {
+  opacity: 0;
+  position: absolute;
+  top: 90px;
+  margin: 0 auto;
   text-decoration: none;
   font-size: 4rem;
   line-height: 30px;
