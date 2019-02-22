@@ -148,6 +148,16 @@ table {
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 4px;
 }
+.quick-nav img:hover {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.quick-nav img:hover:hover:before {
+  transform: translateY(12px) rotate(135deg);
+}
+.quick-nav img:hover:hover:after {
+  transform: translateY(-12px) rotate(-135deg);
+}
 * {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -166,7 +176,14 @@ table {
   flex-wrap: wrap;
   text-align: center;
 }
+@media (max-width: 860px) {
+  .expanded-nav-view {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}
 .expanded-nav-view a {
+  text-decoration: none;
   font-size: 4rem;
   line-height: 30px;
   width: 100%;
@@ -204,6 +221,16 @@ table {
   font-weight: bold;
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 4px;
+}
+.container .home .nav-home img:hover {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.container .home .nav-home img:hover:hover:before {
+  transform: translateY(12px) rotate(135deg);
+}
+.container .home .nav-home img:hover:hover:after {
+  transform: translateY(-12px) rotate(-135deg);
 }
 .container .home .header-home {
   width: 100%;
@@ -412,7 +439,7 @@ footer {
 }
 @media (max-width: 860px) {
   footer {
-    max-width: 440px;
+    max-width: 480px;
     justify-content: flex-start;
     height: 100%;
   }
@@ -506,6 +533,16 @@ footer .column-info p {
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 4px;
 }
+.container .services .nav-services img:hover {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.container .services .nav-services img:hover:hover:before {
+  transform: translateY(12px) rotate(135deg);
+}
+.container .services .nav-services img:hover:hover:after {
+  transform: translateY(-12px) rotate(-135deg);
+}
 .container .services .header-services {
   width: 100%;
   height: 320px;
@@ -562,6 +599,7 @@ footer .column-info p {
   }
 }
 .container .services-block .services-content-tabs button {
+  cursor: pointer;
   font-size: 2rem;
   font-weight: bolder;
   font-size: 0.8rem;
@@ -575,6 +613,11 @@ footer .column-info p {
   .container .services-block .services-content-tabs button {
     width: 100%;
   }
+}
+.container .services-block .services-content-tabs button:hover {
+  background-color: #222222;
+  color: #ffffff;
+  transition: 0.5s;
 }
 .container .services-block .services-content-tabs .tab-link-selected {
   background-color: #5E9FB9;

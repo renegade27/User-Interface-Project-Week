@@ -60,11 +60,17 @@
             max-width: 440px;
         }
         button {
+            cursor: pointer;
             font-size: 2.0rem;
             font-weight: bolder;
             .quick-button(22.5%, 40px);
             @media @tablet {
                 width: 100%;
+            }
+            &:hover {
+                background-color: #222222;
+                color: #ffffff;
+                transition: 0.5s;
             }
         }
         .tab-link-selected {

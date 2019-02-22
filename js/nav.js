@@ -18,7 +18,7 @@ class Nav {
             document.querySelector('.expanded-nav-view').style.display = "flex";
             this.button.src="img/nav-hamburger-close.png";
             this.button.addEventListener('click', () => {
-                document.querySelector(`.${this.id.toLowerCase()}`).style.transition = '0.8s ease-in-out';
+                document.querySelector(`.${this.id.toLowerCase()}`).style.transition = '0.2s ease-in-out';
                 document.querySelector(`.header-${this.id.toLowerCase()}`).style.display = "flex";
                 document.querySelector(`.${this.id.toLowerCase()}-block`).style.display = "";
                 document.querySelector(`.${this.id.toLowerCase()}`).style.height = '100%';
