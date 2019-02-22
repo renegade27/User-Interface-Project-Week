@@ -16,9 +16,9 @@ class Nav {
             document.querySelector(`.${this.id.toLowerCase()}`).style.height = '80px';
             document.querySelector(`.${this.id.toLowerCase()}`).style.margin = '0 auto';
             document.querySelector('.expanded-nav-view').style.display = "flex";
-            TweenMax.to('.expanded-nav-view', 1.0, {opacity:'1', height: "800px"});
+            TweenMax.to('.expanded-nav-view', 1.0, {opacity:'1', height: "1000px"});
             for(var i = 1; i <= 4; i++) {
-                TweenMax.to(`#link${i}`, 1.15, {opacity:'1', y:`${i*150}`, ease: Bounce.easeOut, delay:1.15});
+                TweenMax.to(`#link${i}`, 1.15, {opacity:'1', y:`${i*175}`, ease: Bounce.easeOut, delay:1.15});
             }
             this.button.src="img/nav-hamburger-close.png";
             this.button.addEventListener('click', () => {

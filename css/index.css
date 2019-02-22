@@ -194,6 +194,12 @@ table {
   width: 100%;
   color: white;
   font-family: "PT Sans", sans-serif;
+  font-weight: bold;
+}
+.expanded-nav-view a:hover {
+  transition: 1s;
+  transform: scale(1.05);
+  color: #222222;
 }
 .hide {
   display: none;
