@@ -148,15 +148,16 @@ table {
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 4px;
 }
-.quick-nav img:hover {
+.quick-nav img {
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
 }
-.quick-nav img:hover:hover:before {
-  transform: translateY(12px) rotate(135deg);
+.quick-nav h1 {
+  margin-right: 30%;
 }
-.quick-nav img:hover:hover:after {
-  transform: translateY(-12px) rotate(-135deg);
+@media (max-width: 860px) {
+  .quick-nav h1 {
+    margin-right: 15%;
+  }
 }
 * {
   box-sizing: border-box;
@@ -233,15 +234,16 @@ table {
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 4px;
 }
-.container .home .nav-home img:hover {
+.container .home .nav-home img {
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
 }
-.container .home .nav-home img:hover:hover:before {
-  transform: translateY(12px) rotate(135deg);
+.container .home .nav-home h1 {
+  margin-right: 30%;
 }
-.container .home .nav-home img:hover:hover:after {
-  transform: translateY(-12px) rotate(-135deg);
+@media (max-width: 860px) {
+  .container .home .nav-home h1 {
+    margin-right: 15%;
+  }
 }
 .container .home .header-home {
   width: 100%;
@@ -544,15 +546,16 @@ footer .column-info p {
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 4px;
 }
-.container .services .nav-services img:hover {
+.container .services .nav-services img {
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
 }
-.container .services .nav-services img:hover:hover:before {
-  transform: translateY(12px) rotate(135deg);
+.container .services .nav-services h1 {
+  margin-right: 30%;
 }
-.container .services .nav-services img:hover:hover:after {
-  transform: translateY(-12px) rotate(-135deg);
+@media (max-width: 860px) {
+  .container .services .nav-services h1 {
+    margin-right: 15%;
+  }
 }
 .container .services .header-services {
   width: 100%;
