@@ -209,6 +209,13 @@ table {
   background-color: black;
   color: white;
 }
+.sticky {
+  max-width: 860px;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  overflow: hidden;
+}
 .container .home {
   max-width: 860px;
   height: 680px;
@@ -520,6 +527,11 @@ footer .column-info p {
 }
 .hide {
   display: none;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 .container .services {
   max-width: 860px;

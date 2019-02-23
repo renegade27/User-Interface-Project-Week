@@ -102,6 +102,20 @@ const lightswitch = document.querySelector('#switch');
 
 const dropdown = document.querySelector('#color-dropdown');
 
+const tempnav = document.querySelector(`nav`);
+
+window.onscroll = function() {myFunction()};
+
+var sticky = tempnav.offsetTop;
+
+function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      tempnav.classList.add("sticky")
+    } else {
+      tempnav.classList.remove("sticky");
+    }
+}
+
 const findColor = function() {
     return ;
 }
