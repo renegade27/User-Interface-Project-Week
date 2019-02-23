@@ -61,7 +61,7 @@ class Nav {
                 TweenMax.to('.copyright', 1, { backgroundColor:`${colorCodes[0][dropdown.options[dropdown.selectedIndex].value].light[0]}` });
                 TweenMax.to('.container', 1, { backgroundColor:`${colorCodes[0][dropdown.options[dropdown.selectedIndex].value].light[1]}` });
                 TweenMax.to('.container.home-block', 1, { backgroundColor:`${colorCodes[0][dropdown.options[dropdown.selectedIndex].value].light[1]}` });
-                document.querySelector('.img-overlay').style.backgroundColor = colorCodes[0][dropdown.options[dropdown.selectedIndex].value].light[2];
+                document.querySelectorAll('.img-overlay').forEach(img => img.style.backgroundColor = colorCodes[0][dropdown.options[dropdown.selectedIndex].value].light[2]);
                 this.switch.src = "img/switch-off.png";
                 this.switchHandlerHome();
             });
