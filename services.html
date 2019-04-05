@@ -5,18 +5,105 @@
 	<title>Services</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="css/index.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Staatliches|PT+Sans:400|Ubuntu" rel="stylesheet">
 	<!--[if IE]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 </head>
 
-<body>
+<body class="container">
 
-	<h1>Services</h1>
+	<div class="container services">
+		<nav class="nav-services" data-title="Services">
+			<h1>S&J</h1>
+			<select id="color-dropdown">
+					<option value="grey">Grey</option>
+					<option value="salmon">Salmon</option>
+					<option value="purple">Purple<option>
+				</select>
+				<img id="switch" src="img/switch-off.png">
+			<img id="hamburger" src="img/nav-hamburger.png">
+		</nav>
+		<header class="header-services">
+			<p> Services </p>
+		</header>
+	<script src="js/nav.js"></script>
+	</div>
+
+	<div class="expanded-nav-view">
+			<a id="link1" href="index.html">HOME</a>
+			<a id="link2" href="services.html">SERVICES</a>
+			<a id="link3" href="services.html">EXAMPLE</a>
+			<a id="link4" href="services.html">EXAMPLE</a>
+		</div>
+
+	<div class="container services-block">
+		<div class="services-content-row">
+				<p> 
+					Services include: completely synergize resource taxing relationships via premier niche markets. 
+					Professionally cultivate one-to-one customer service with robust ideas. 
+					Dynamically innovate resource-leveling customer service for state of the art customer service. 
+				</p>
+		</div>
+		<div class="services-content-tabs">
+			<button data-tab="1">Pre-Construction</button>
+			<button data-tab="2">Construction</button>
+			<button data-tab="3">Design Build</button>
+			<button data-tab="4">Sustainability</button>
+		</div>
+		
+		<div class="services-content-block">
+			<h2> Construction </h2>
+			<div class='tab-content'>
+				<p class='tab-text'>
+					Completely synergize resource taxing relationships via premier niche markets. 
+					Professionally cultivate one-to-one customer service with robust ideas. 
+					Dynamically innovate resource-leveling customer service for state of the art customer service.
+				</p>
+					<br>
+					<br>
+				<p class='tab-text'>
+					Phosfluorescently engage worldwide methodologies with web-enabled technology. 
+					Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking.
+					Completely pursue scalable customer service through sustainable potentialities.
+				<p>
+			</div>
+			<img src="img/services/services-tab-construction-img.png">
+		</div>
+	</div>
+	<footer>
+			<div class="column-input">
+				<h2>Interested in starting a project?</h2>
+				<h2>Let's Talk:</h2>
+				<input type="email"></input>
+				<p>We'll never share your email with anyone else.</p>
+			</div>
+			<div class="column-info">
+				<h2>New York</h2>
+				<p>123 Lane</p>
+				<p>Suite 100</p>
+				<p>Albany, NY 12345</p>
+				<p>202-555-0144</p>
+			</div>
+			<div class="column-info">
+				<h2>Florida</h2>
+				<p>Ocean Drive</p>
+				<p>Suite 201</p>
+				<p>Orlando, FL 22345</p>
+				<p>202-555-0144</p>
+			</div>
+			<div class="column-info">
+				<h2>California</h2>
+				<p>Mountain Street</p>
+				<p>Suite 105</p>
+				<p>San Diego, CA 22345</p>
+				<p>202-555-0144</p>
+			</div>
+			<p class="copyright">Copyright @ 2018 Smith & Jones</p>
+		</footer>
 
 <!-- Services Content 
   Services
-  
   Services include: completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.
 -->
 
@@ -32,7 +119,7 @@
 
 
 -->
-
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TweenMax.min.js'></script>
 	<script src="js/index.js"></script>
 </body>
 </html>
